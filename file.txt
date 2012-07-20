@@ -1,0 +1,9 @@
+# Legend for the lines
+# N - New
+# S - Seen
+# C - Contacted
+# E - Emailed
+# T - Seen but still considering
+# ===============================================================================================
+
+# This is a comment.  Put anything you like after the # since it will be ignored.  
