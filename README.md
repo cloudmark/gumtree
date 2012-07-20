@@ -1,6 +1,6 @@
-* Gumtree Crawler
+# Gumtree Crawler
 
-** Gumtree 
+## Gumtree 
 
 Gumtree is an extensive network of online classifieds and community websites.  
 
@@ -8,17 +8,17 @@ Gumtree now covers 60 cities across 6 countries - the UK, Ireland, Poland, Austr
 
 Read more about Gumtree [here](http://en.wikipedia.org/wiki/Gumtree) or visit the website [here](http://www.gumtree.com/)
 
-** What does this project do?
+## What does this project do?
 
 This project is intended to find and filter (ones that you have already seen) flatshares within a partcular area and display a list of links.  The list will automatically update every 60 seconds to provide you a list of fresh links.  
 
-** Why?
+## Why?
 
 Good flats disappear quickly and most of the time it depends on you being on of the first persons to book a viewing.  With this script you are given immediately udpates (within the area of interest) which happen on the site without requiring to constantly go through all the ads.  
 
 Most of the people renting out flats update their post multiple times so that the post gets push on the top place.  This script guarantees that you only see the link once saving you time.  
 
-** How do I run this?
+## How do I run this?
 
 The program is a combination of a simple bash and python script.  To run the gum tree parser navigate to the downloaded source files and run the following command. 
 
