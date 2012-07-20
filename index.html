@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Gumtree by cloudmark</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Gumtree</h1>
+        <p>A gumtree crawler which finds flat shares within a particular reas.  </p>
+
+        <p class="view"><a href="https://github.com/cloudmark/gumtree">View the Project on GitHub <small>cloudmark/gumtree</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/cloudmark/gumtree/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/cloudmark/gumtree/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/cloudmark/gumtree">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>Gumtree Crawler</h1>
+
+<h2>Gumtree</h2>
+
+<p>Gumtree is an extensive network of online classifieds and community websites.  </p>
+
+<p>Gumtree now covers 60 cities across 6 countries - the UK, Ireland, Poland, Australia, New Zealand and South Africa. It is the UK's largest website for local community classifieds and was once one of the top 20 websites in the UK.</p>
+
+<p>Read more about Gumtree <a href="http://en.wikipedia.org/wiki/Gumtree">here</a> or visit the website <a href="http://www.gumtree.com/">here</a></p>
+
+<h2>What does this project do?</h2>
+
+<p>This project is intended to find and filter (ones that you have already seen) flat shares within a particular area and display a list of links.  The list will automatically update every 60 seconds to provide you a list of fresh links.  </p>
+
+<h2>Why?</h2>
+
+<p>Good flats disappear quickly and most of the time it depends on you being one of the first persons to book a viewing.  With this script you receive updates which happen on gumtree (within the area of interest) in real-time without requiring to constantly go through all the ads.  </p>
+
+<h2>How do I run this?</h2>
+
+<p>The program is a combination of a bash and python.  To run the gum tree parser navigate to the downloaded source files and run the following command from your terminal. </p>
+
+<pre><code>./run.sh
+</code></pre>
+
+<p>The flatshares available within your area of interest will be displayed in the console (only shows status N items) and will be also saved in the file called 'file.txt' (Not so fancy!) so that you can view them later.  </p>
+
+<p>The flats are presented in this format. </p>
+
+<pre><code>&lt;STATUS&gt; &lt;UNIQUE ID&gt; &lt;DESCRIPTION WITH LINK&gt; &lt;AREA&gt;
+</code></pre>
+
+<p>The Status can be one of the following </p>
+
+<pre><code>N - New, This is a freshly retrieved flat share. This is the initial state.  
+S - Seen, Indicates that you have seen the flat and that you are not really interested. 
+T - Seen, Indicates that you have seen the flat and this one is shortlisted! 
+C - Contacted, Indicates that you have already contacts this owner by phone.  
+E - Emailed, Indicates that you have contacted this owner by email.
+</code></pre>
+
+<p>A sample output looks like this.  </p>
+
+<pre><code>N       leader-107138167        Large Double Room in Amazing Marchmont Flat - Ideal for Couples http://www.gumtree.com/p/flats-houses/large-double-room/107138167    "marchmont"
+N       leader-106357352        Student flatmate needed for great marchmont flat, preferably Spanish speaking!  http://www.gumtree.com/p/flats-houses/student-flatmate-needed-for-great/106357352      "marchmont"
+</code></pre>
+
+<p>Now let us say that you have seen the flat with ID <code>leader-107138167</code> and are happy with it, just change the status to <code>T</code> thus. </p>
+
+<pre><code>T       leader-107138167        Large Double Room in Amazing Marchmont Flat - Ideal for Couples http://www.gumtree.com/p/flats-houses/large-double-room/107138167    "marchmont"
+</code></pre>
+
+<p>Note that this item will disappear from the console since the console filter items with a 'N' status.  </p>
+
+<h2>How do I Filter?</h2>
+
+<p>In order the filter the areas which are being searched.  Open the source folder and open the file called <code>crawl.py</code>.  </p>
+
+<p>You should be able to see the following section. </p>
+
+<pre><code>areas = [
+        "marchmont", 
+        "bruntsfield",
+]
+</code></pre>
+
+<p>In order to include an area of interest just add the area in inverted commas (without spaces all lowercase).  Do not forget the comma.  E.g. if we wanted to add 'tollcross' add this to the areas section.</p>
+
+<pre><code>areas = [
+        "marchmont", 
+        "bruntsfield",
+        "tollcross",
+] 
+</code></pre>
+
+<p>In order to remove an area simply delete the entry.  </p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/cloudmark">cloudmark</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-32781094-3");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
