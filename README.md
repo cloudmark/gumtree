@@ -39,6 +39,7 @@ The Status can be one of the following
     E - Emailed, Indicates that you have contacted this owner by email.
   
 A sample output looks like this.  
+
     N       leader-107138167        Large Double Room in Amazing Marchmont Flat - Ideal for Couples http://www.gumtree.com http://www.gumtree.com/p/flats-houses/large-double-room/107138167    "marchmont"
     N       leader-106357352        Student flatmate needed for great marchmont flat, preferably Spanish speaking!  http://www.gumtree.com/p/flats-houses/student-flatmate-needed-for-great/106357352      "marchmont"
   
