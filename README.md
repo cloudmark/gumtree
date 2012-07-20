@@ -22,29 +22,29 @@ Most of the people renting out flats update their post multiple times so that th
 
 The program is a combination of a simple bash and python script.  To run the gum tree parser navigate to the downloaded source files and run the following command. 
 
-  ./run.sh
+    ./run.sh
   
 The flatshares available within your area of interest will be displayed in the console (only shows status N items) and will be saved in the file called 'file.txt' (Not so fancy!) so that you can view them later.  
 
 The flats are presented in this format. 
 
-  <STATUS> <UNIQUE ID> <DESCRIPTION WITH LINK> <AREA>
+    <STATUS> <UNIQUE ID> <DESCRIPTION WITH LINK> <AREA>
   
 The Status can be one of the following 
 
-  N - New, This is a freshly retrieved flat share from the crawler.
-  S - Seen, Indicates that you have seen the flat and that you are not really interested. 
-  T - Seen, Indicates that you have seen the flat and this one is shortlisted! 
-  C - Contacted, Indicates that you have already contacts this owner by phone.  
-  E - Emailed, Indicates that you have contacted this owner by email.
+    N - New, This is a freshly retrieved flat share from the crawler.
+    S - Seen, Indicates that you have seen the flat and that you are not really interested. 
+    T - Seen, Indicates that you have seen the flat and this one is shortlisted! 
+    C - Contacted, Indicates that you have already contacts this owner by phone.  
+    E - Emailed, Indicates that you have contacted this owner by email.
   
 A sample output looks like this.  
-  N       leader-107138167        Large Double Room in Amazing Marchmont Flat - Ideal for Couples http://www.gumtree.com http://www.gumtree.com/p/flats-houses/large-double-room/107138167    "marchmont"
-  N       leader-106357352        Student flatmate needed for great marchmont flat, preferably Spanish speaking!  http://www.gumtree.com/p/flats-houses/student-flatmate-needed-for-great/106357352      "marchmont"
+    N       leader-107138167        Large Double Room in Amazing Marchmont Flat - Ideal for Couples http://www.gumtree.com http://www.gumtree.com/p/flats-houses/large-double-room/107138167    "marchmont"
+    N       leader-106357352        Student flatmate needed for great marchmont flat, preferably Spanish speaking!  http://www.gumtree.com/p/flats-houses/student-flatmate-needed-for-great/106357352      "marchmont"
   
 Now let us say that you have seen the flat with ID leader-107138167 and you think that it was OK, just change the status to T thus. 
 
-  T       leader-107138167        Large Double Room in Amazing Marchmont Flat - Ideal for Couples http://www.gumtree.com http://www.gumtree.com/p/flats-houses/large-double-room/107138167    "marchmont"
+    T       leader-107138167        Large Double Room in Amazing Marchmont Flat - Ideal for Couples http://www.gumtree.com http://www.gumtree.com/p/flats-houses/large-double-room/107138167    "marchmont"
 
 Note that this item will disappear from the console since the console filter items with a 'N' status.  
 
