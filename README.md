@@ -48,4 +48,31 @@ Now let us say that you have seen the flat with ID leader-107138167 and you thin
 
 Note that this item will disappear from the console since the console filter items with a 'N' status.  
 
+## How do I Filter?
+
+In order the filter the areas which are being searched.  
+
+Go to the source and open the file called <code>crawl.py</code>.  
+
+You should be able to see the following section. 
+
+    areas = [
+        	"marchmont", 
+    		"bruntsfield",
+    ]
+    
+In order to include an area just add the area in inverted commas (without spaces all lowercase).  Do not forget the comma.  E.g. if we wanted to add tollcross add this to the areas section.
+    
+    areas = [
+            "marchmont", 
+    		"bruntsfield",
+            "tollcross",
+    ] 
+
+In order to remove an area simply delete the entry.  
+
+
+
+
+
   
